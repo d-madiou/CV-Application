@@ -99,7 +99,9 @@ header h1 {
     margin: 10px;
     box-shadow: none;
   }
-
+  .section-title-left{
+    font-size: 1rem;
+  }
   .cv-preview > header {
     
     background-color: #027030;
@@ -113,7 +115,19 @@ header h1 {
    p{
     font-size: 0.7rem;
   }
-
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    margin-top: 0;
+  }
+  .position{
+    margin-bottom: 0;
+  }
+  .contact-info p{
+    margin-bottom: 0;
+  }
+  
   .cv-preview > section {
     padding: 1rem;
     max-width: 100%;
