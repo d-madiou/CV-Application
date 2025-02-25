@@ -1,0 +1,53 @@
+
+.general-info {
+    margin: 20px 0;
+}
+
+.general-info h2 {
+    text-align: center;
+}
+
+.general-info .display {
+    text-align: left;
+}
+
+.general-info input,
+.general-info textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.general-info button {
+    margin-top: 10px;
+    
+    background-color: #000B58; /* Green color for save button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.general-info button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000B58;
+    align-items: center;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+}
+.display:hover{
+    background-color: #afafaf;
+    cursor: pointer;
+  }

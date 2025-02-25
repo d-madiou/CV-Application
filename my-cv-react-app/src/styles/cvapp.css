@@ -1,0 +1,44 @@
+.main{
+    display: flex;
+}
+.main .left{
+    width: 40%;
+    background-color: black;
+    height: 100vh;
+}
+.Diallo {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.right {
+    margin: 1rem;
+    background-color: #F8E7F6;
+    width: 70.7%; /* Adjust width as needed */
+    display: flex;
+    height: auto;
+    flex-direction: row; /* Align children in a row */
+}
+
+.right-left {
+    flex: 1; /* Take up remaining space */
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column; 
+    background-color: #27445D;
+    padding-left: 1rem;
+    width: 100%;
+    color: white;
+    height: 100vh;
+}
+
+.right-right {
+    display: flex;
+    width: 50%; 
+    background-color: black; 
+    align-items: center; 
+    color: white; 
+    padding: 1rem; 
+}

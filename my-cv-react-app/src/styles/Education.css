@@ -1,0 +1,21 @@
+.education-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000B58;
+    align-items: center;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+}
+.form-buttons > .button{
+    background-color: #000B58;
+    color: white;
+}
+.education-header:hover{
+    background-color: #afafaf;
+    cursor: pointer;
+  }
+

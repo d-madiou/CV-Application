@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.cv-preview {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 20px auto;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  position: absolute;
+  left: 30%;
+}
+
+/* Left Section Styles */
+.cv-preview > header {
+  flex: 0 0 33.3333%;
+  background-color: #027030;
+  color: white;
+  padding: 3rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+header h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+ 
+  text-align: center;
+  text-transform: uppercase;
+}
+hr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.position{
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0;
+  
+}
+.contact-info p .icon{
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0;
+  margin-right: 0.5rem;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+  width: 16px;
+}
+.section-title-left, .icon{
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0;
+  margin-right: 0.5rem;
+}
+
+.skill-item{
+  display:flex ;
+  justify-content: space-between;
+}
+
+/* Right Section Styles */
+.cv-preview > section {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.about-me{
+  color: #374151;;
+}
+.section-title i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #065f28;
+}
+
+.section-title-left {
+  color: white;
+}
+
+/* Education and Work Experience */
+.education-item,
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-item h3,
+.experience-item h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #096821;
+  margin-bottom: 0.25rem;
+}
+
+.education-item span,
+.experience-item span {
+  color: #065f46;
+  font-weight: 600;
+  font-size: 0.875rem;
+  position: absolute;
+  right: 0;
+}
+
+.education-item p,
+.experience-item p {
+  color: #374151;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0.25rem 0;
+}
+
+/* Section Layout */
+.education-item h3,
+.experience-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-preview > section {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .education-item h3,
+  .experience-item h3 {
+    font-size: 0.85rem;
+  }
+
+  .education-item span,
+  .experience-item span {
+    font-size: 0.8rem;
+    position: static;
+  }
+}
+
+
+/* Print Styles */
+@media print {
+  body * {
+      visibility: hidden;
+  }
+  .cv-preview, .cv-preview * {
+      visibility: visible;
+  }
+  .cv-preview {
+      position: absolute;
+      left: 0;
+      top: 0;
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+  }
+}
+@media screen {
+  .cv-preview {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px auto;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .cv-preview {
+    padding: 15mm;
+    width: 210mm;
+    min-height: 297mm;
+    box-shadow: none;
+    position: relative;
+  }
+  
+  /* Force all text to be black */
+  * {
+    color: #000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

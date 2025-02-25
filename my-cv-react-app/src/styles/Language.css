@@ -1,0 +1,56 @@
+.languages-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000B58;
+    align-items: center;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.1rem 1rem;
+}
+.level-buttons {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+  }
+
+.languages-header:hover{
+    background-color: #afafaf;
+    cursor: pointer;
+  }
+  
+  .level-buttons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .level-buttons button:hover {
+    background-color: #ccc;
+  }
+  
+  .level-buttons button.selected {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+.skill-item-left{
+    display: flex;
+    background-color: rgb(224, 224, 224);
+    justify-content: space-between;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    border-radius: 10px;
+}
+button.delete-btn-m{
+    background-color: transparent;
+    padding: 0;
+    
+}
