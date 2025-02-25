@@ -124,15 +124,16 @@ function App() {
           <button onClick={handlePrint}>Print</button>
       </div>
       </div>
-      <CVPreview
-        ref={cvRef}
-        generalInfo={generalInfo}
-        educations={educations}
-        experiences={experiences}
-        skills={skills}
-        languages={languages}
-        
-      />
+      <div className="cv-review">
+        <CVPreview
+          ref={cvRef}
+          generalInfo={generalInfo}
+          educations={educations}
+          experiences={experiences}
+          skills={skills}
+          languages={languages}
+        />
+      </div>
       
     </div>
   );

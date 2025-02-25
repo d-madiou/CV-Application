@@ -42,6 +42,10 @@
     left: 2px;
     width: 23%;
   }
+  .cv-review{
+    position: relative;
+    left: 50%;
+  }
   
   .form-section {
     margin-bottom: 30px;
@@ -127,19 +131,38 @@
   
   @media (max-width: 768px) {
     .App {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Keep single-column layout */
+      gap: 20px;
+      max-width: 100%; /* Allow it to take full width */
       padding: 10px;
     }
   
     .forms-container {
-      position: static;
       width: 100%;
-      margin-bottom: 30px;
+      position: static;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  
+    .cv-review {
+      position: static; /* Remove absolute positioning */
+      margin-top: 20px;
+      width: 40px;
+      height: 60px;
+    }
+  
+    input {
+      font-size: 16px; /* Increase readability */
+    }
+  
+    .actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    button {
+      width: 100%; /* Make buttons fit small screens */
+      font-size: 1em;
     }
   }
   
-  @media print {
-    .forms-container, .actions {
-      display: none !important;
-    }
-  }
